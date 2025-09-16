@@ -4,6 +4,12 @@ let userClickPattern = [];
 let level = 0;
 let started = false;
 
+function startOver() {
+  level = 0;
+  gamePattern = [];
+  started = false;
+}
+
 function checkAnswer(currentLevel) {
   if (userClickPattern[currentLevel] === gamePattern[currentLevel]) {
     console.log("SUCCESS");
@@ -15,7 +21,14 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
-    console.log("wrong");
+    wrongSound = "wrong";
+    $("body").addClass("game-over");
+    playsound(wrongSound);
+    setTimeout(function () {
+      $("body").removeClass("game-over");
+    }, 200);
+    $("h1").text("Game Over, Tekan Tombol Apa Saja Untuk Restart");
+    startOver();
   }
 }
 
@@ -33,6 +46,7 @@ function animatePress(currentColour) {
 }
 
 function nextSequence() {
+  userClickPattern = [];
   level++;
   $("#level-title").text("Level " + level);
 
@@ -66,4 +80,4 @@ $(".btn").on("click", function () {
 });
 
 // Set initial h1 text
-$("h1").text("Press A Key to Start");
+$("h1").text("Tekan Tombol Untuk Mulai");
