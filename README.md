@@ -4,7 +4,10 @@ Sebuah game memori klasik yang diimplementasikan menggunakan HTML, CSS, dan Java
 
 ## Tentang Game
 
-Simon adalah game elektronik memori dan konsentrasi. Game ini memiliki empat tombol berwarna yang menyala dalam urutan yang harus diulangi oleh pemain. Setelah setiap percobaan yang sukses, urutan menjadi lebih panjang dan lebih sulit untuk diingat.
+Simon adalah game elektronik memori dan konsentrasi. Game ini memiliki empat tombol berwarna yang menyala dalam urutan yang harus diulangi oleh pemain. Setelah setiap percobaan yang sukses, urutan menjadi lebih panjang dan lebih sulit untuk diingat.  
+
+## VIDEO  
+![Demo Game Simon](./assets/2025-11-2114-11-14-ezgif.com-video-to-gif-converter.gif)
 
 ### Fitur:
 - Empat tombol berwarna (merah, biru, hijau, kuning)
